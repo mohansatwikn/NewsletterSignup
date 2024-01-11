@@ -31,7 +31,7 @@ app.post('/signup',(req,res)=>{
     const url="https://us13.api.mailchimp.com/3.0/lists/21104404c3";
     const options={
         method:"POST",
-        auth:"MohanSatwik:73c50a63d9cc2d2a5971861b65c7c64c-us13"
+        auth:"MohanSatwik:d3300a9c8bfe2520ea4e4837dea2d3ab-us13"
     }
     const request=https.request(url,options,(response)=>{
         if(response.statusCode===200){
@@ -56,8 +56,5 @@ app.post("/failure",(req,res)=>{
 app.listen(process.env.PORT || port,()=>{
     console.log(`server listening at port ${port}`);
 });
-
-//API-KEY 73c50a63d9cc2d2a5971861b65c7c64c-us13
-//list id 21104404c3
 
 
